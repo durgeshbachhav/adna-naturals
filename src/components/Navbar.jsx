@@ -58,14 +58,14 @@ const Navbar = () => {
 
         <div className="lg:hidden">
           <TfiMenuAlt
-            color="white"
+            color="black"
             onClick={toggleMenu}
             className="h-6 w-6 cursor-pointer"
           />
         </div>
         <div
           ref={menuRef}
-          className={`absolute inset-x-0 top-0 z-50 p-2 transition-transform duration-300 ease-in-out lg:hidden bg-green-900 transform ${isMenuOpen ? "translate-y-0" : "-translate-y-full"
+          className={`absolute inset-x-0 top-0 z-50 p-2 transition-transform duration-300 ease-in-out lg:hidden bg-green-100 transform ${isMenuOpen ? "translate-y-0" : "-translate-y-full"
             }`}
         >
           <div className="divide-y-2 divide-gray-50 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
@@ -75,7 +75,7 @@ const Navbar = () => {
                   <Link to={`/`} className="font-bold">
                     <img
                       src={logo}
-                      className="w-20 h-20 bg-yellow-500 rounded-full"
+                      className="w-32  rounded-full"
                       alt="Logo"
                     />
                   </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
                   >
                     <span className="sr-only">Close menu</span>
                     <MdCancel
-                      color="white"
+                      color="black"
                       className="h-6 w-6"
                       aria-hidden="true"
                     />
