@@ -3,7 +3,10 @@ import HeroSection from "../components/HeroSection";
 import image from "../assets/textures/texture1.png";
 import { Link } from "react-router-dom";
 import earth from "../assets/earth.jpg";
-import about1 from "../assets/about1.png";
+import about1 from "../assets/aboutus/one.jpg";
+import about2 from "../assets/aboutus/two.jpg";
+import about3 from "../assets/aboutus/three.jpg";
+import about4 from "../assets/aboutus/five.jpg";
 
 const About = () => {
   return (
@@ -22,7 +25,6 @@ const About = () => {
                 enduring power of love, family, and our deep connection to the
                 earth.
               </p>
-
               <h2 className="font-bold text-2xl text-center md:text-start">
                 A Journey of Love and Care
               </h2>
@@ -46,27 +48,27 @@ const About = () => {
                   className="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto min-[450px]:mr-0"
                 />
                 <img
-                  src={about1}
+                  src={about2}
                   alt="Team tailwind section"
                   className="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mx-auto"
                 />
                 <img
-                  src={about1}
+                  src={about3}
                   alt="Team tailwind section"
                   className="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto min-[450px]:mr-0 md:ml-0"
                 />
                 <img
-                  src={about1}
+                  src={about4}
                   alt="Team tailwind section"
                   className="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mr-0 md:ml-auto"
                 />
                 <img
-                  src={about1}
+                  src={about2}
                   alt="Team tailwind section"
                   className="w-44 h-56 rounded-2xl object-cover md:-mt-20 mx-auto min-[450px]:mr-0 md:mx-auto"
                 />
                 <img
-                  src={about1}
+                  src={about3}
                   alt="Team tailwind section"
                   className="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mr-0"
                 />
@@ -172,3 +174,4 @@ const About = () => {
 };
 
 export default About;
+   

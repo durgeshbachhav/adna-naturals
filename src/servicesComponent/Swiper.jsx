@@ -26,7 +26,11 @@ const SwiperComponent = () => {
   const [loading, setLoading] = useState(true); // Initially set loading to true
 
   const swiperImages = [
-    asset8, asset9, asset10, asset11, asset12
+    asset8,
+    asset9,
+    asset10,
+    asset11,
+    asset12,
 
     // adna1,
     // adna2,

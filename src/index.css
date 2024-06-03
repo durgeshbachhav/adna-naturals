@@ -3,14 +3,13 @@
 @tailwind utilities;
 
 
-/* navbar btn */
 
 .btn {
   font-size: 14px;
   background: transparent;
   border: none;
   padding: 1em 1.5em;
-  color: #ffedd3;
+  color: #000000;
   text-transform: uppercase;
   position: relative;
   transition: 0.5s ease;
@@ -31,7 +30,7 @@
 .btn:hover {
   color: #1e1e2b;
   /* transition-delay: 0.5s; */
-  background-color: #ffc400;
+  background-color: #00ca4d;
 }
 
 .btn:hover::before {

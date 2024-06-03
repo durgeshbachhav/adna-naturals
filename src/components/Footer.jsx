@@ -9,7 +9,7 @@ const Footer = () => {
           <Link to={`/`} className="py-1.5">
             <img
               src={logo}
-              className="w-20 h-20 bg-yellow-500 rounded-full"
+              className="w-32  bg-yellow-500 rounded-full"
               alt=""
             />
           </Link>

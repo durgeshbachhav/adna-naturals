@@ -9,8 +9,12 @@ import Blogpage from "./pages/Blogpage";
 import ProductInfo from "./pages/ProductInfo";
 import Privacy from "./pages/other/Privacy";
 import Return from "./pages/other/Return";
+import LocomotiveScroll from 'locomotive-scroll';
+
+
 
 export default function App() {
+  const locomotiveScroll = new LocomotiveScroll();
   return (
     <div className="">
       <Routes>
