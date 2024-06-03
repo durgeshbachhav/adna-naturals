@@ -1,15 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import "./styles.css";
-
-// import required modules
 import { Pagination, Navigation } from "swiper/modules";
-
-import "swiper/css";
 import { useEffect, useState } from "react";
 import Loader from "../components/loader/Loader";
 import asset8 from "../assets/asset8.jpeg";
@@ -17,13 +10,14 @@ import asset9 from "../assets/asset9.jpeg";
 import asset10 from "../assets/asset10.jpeg";
 import asset11 from "../assets/asset11.jpeg";
 import asset12 from "../assets/asset12.gif";
-// import adna1 from "../assets/adna1.jpg";
-// import adna2 from "../assets/adna2.jpg";
-// import adna3 from "../assets/adna3.jpg";
-// import adna4 from "../assets/adna4.jpg";
+import product1 from './../assets/product1.jpg';
+import product2 from './../assets/product2.jpg';
+import product3 from './../assets/product3.jpg';
+import product4 from './../assets/product4.jpg';
+import product5 from './../assets/product5.jpg';
 
 const SwiperComponent = () => {
-  const [loading, setLoading] = useState(true); // Initially set loading to true
+  const [loading, setLoading] = useState(true);
 
   const swiperImages = [
     asset8,
@@ -31,43 +25,70 @@ const SwiperComponent = () => {
     asset10,
     asset11,
     asset12,
-
-    // adna1,
-    // adna2,
-    // adna3,
-    // adna4,
   ];
 
-  // Simulating image loading with useEffect
+  const swiperImagesforMobileScreen = [
+    product1,
+    product2,
+    product3,
+    product4,
+    product5
+  ];
+
   useEffect(() => {
-    setLoading(false); // Once component is mounted, set loading to false
+    setLoading(false);
   }, []);
 
   return (
     <div>
-      {loading && <Loader />} {/* Show loading indicator if loading */}
+      {loading && <Loader />}
       {!loading && (
-        <Swiper
-          spaceBetween={0}
-          slidesPerView={1}
-          pagination={{
-            type: "fraction",
-          }}
-          loop={true}
-          navigation={true}
-          modules={[Navigation]}
-          className="mySwiper"
-        >
-          {swiperImages?.map((image, index) => (
-            <SwiperSlide className="h-96" key={index}>
-              <img
-                src={image}
-                className="w-full h-full object-fill"
-                alt={`Image ${index + 1}`}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <>
+          {/* For mobile screens */}
+          <div className="block md:hidden">
+            <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              pagination={{ type: "fraction" }}
+              loop={true}
+              navigation={true}
+              modules={[Navigation]}
+              className="mySwiper"
+            >
+              {swiperImagesforMobileScreen.map((image, index) => (
+                <SwiperSlide className="h-96" key={index}>
+                  <img
+                    src={image}
+                    className="w-full h-full object-fill"
+                    alt={`Image ${index + 1}`}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+          {/* For tablets and desktop screens */}
+          <div className="hidden md:block">
+            <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              pagination={{ type: "fraction" }}
+              loop={true}
+              navigation={true}
+              modules={[Navigation]}
+              className="mySwiper"
+            >
+              {swiperImages.map((image, index) => (
+                <SwiperSlide className="h-96" key={index}>
+                  <img
+                    src={image}
+                    className="w-full h-full object-fill"
+                    alt={`Image ${index + 1}`}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </>
       )}
     </div>
   );

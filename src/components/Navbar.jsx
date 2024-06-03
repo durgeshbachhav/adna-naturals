@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import gsap from 'gsap';
 import logo from "../assets/logo/logo.png";
 
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuRef = useRef(null);
