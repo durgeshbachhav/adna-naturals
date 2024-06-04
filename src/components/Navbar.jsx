@@ -35,7 +35,7 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <div className="border-b-4 backdrop:bg-black border-white  backdrop:opacity-15  backdrop-blur-lg w-full fixed h-[100px] z-50 ">
+    <div className="border-b-4 bg-green-800 border-white  backdrop:opacity-15  backdrop-blur-lg w-full fixed h-[100px] z-50 ">
       <div className="mx-auto flex max-w-7xl items-center justify-between py-4 px-8">
         <div className="inline-flex items-center">
           <span></span>

@@ -163,11 +163,11 @@ const OurJourney = () => {
                     sustainable future for all.
                   </p>
                 </div>
-                <div className="bg-white py-6 sm:py-8 lg:py-12">
+                <div className=" py-6 sm:py-8 lg:py-12">
                   <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-                    <div className="flex flex-col items-center justify-between gap-4 rounded-lg bg-gray-100 p-4 sm:flex-row md:p-8">
+                    <div className="flex flex-col items-center justify-between gap-4 rounded-lg lg:mt-24 mt-10 bg-gradient-to-l from-green-100 to-green-600  sm:flex-row md:p-8">
                       <div>
-                        <p className="text-lg max-w-3xl">
+                        <p className="text-lg max-w-3xl text-white">
                           Thank you for being a part of our story. Together, we
                           can make a difference – one gentle touch, one loving
                           embrace, and one Earth-friendly product at a time.
@@ -182,6 +182,7 @@ const OurJourney = () => {
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@ const ReviewCard = ({ reviewdata }) => {
   const { name, image, profession, review } = reviewdata;
 
   return (
-    <div className="border hover:border-none hover:shadow-lg rounded-lg p-4 ease-in duration-300 cursor-pointer">
+    <div className="border hover:border-none hover:shadow-lg rounded-lg p-4 ease-in duration-300 cursor-pointer bg-white hover:shadow-lg">
       
       <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
         <div className="text-center text-gray-600">“{review}”</div>

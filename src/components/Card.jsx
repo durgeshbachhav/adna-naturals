@@ -7,13 +7,13 @@ const Card = ({ card }) => {
   return (
     <Link
       to={`/productinfo/${id}`}
-      className="mx-auto sm:mr-0 group cursor-pointer  lg:mx-auto  transition-all duration-500 border-2 hover:border-2 rounded-lg  "
+      className="mx-auto sm:mr-0 group cursor-pointer  lg:mx-auto  transition-all duration-300 border-2 p-2  rounded-lg  hover:bg-pink-100"
     >
       <div className="">
         <img
           src={image}
           alt="face cream image"
-          className="w-full aspect-square rounded-lg hover:-m-2 hover:scale-90 transition-all duration-500 hover:shadow-lg  hover:shadow-gray-500 border hover:border-none"
+          className="w-full aspect-square rounded-lg  transition-all duration-500 "
         />
       </div>
       <div className="mt-5 px-4">

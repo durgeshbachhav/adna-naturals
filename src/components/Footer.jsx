@@ -4,8 +4,8 @@ import logo from "../assets/logo/logo.png";
 const Footer = () => {
   return (
     <section className="pt-16 pb-7 px-2">
-      <div className="mx-auto max-w-7xl px-4 lg:px-12 p-12 rounded-2xl bg-green-100">
-        <div className="flex flex-col min-[830px]:flex-row items-center justify-between gap-6 pb-10 border-b-2 border-gray-200">
+      <div className="mx-auto max-w-7xl px-4 lg:px-12 p-12 rounded-2xl bg-green-200">
+        <div className="flex flex-col min-[830px]:flex-row items-center justify-between gap-6 pb-10 border-b-2 border-white">
           <Link to={`/`} className="py-1.5">
             <img
               src={logo}
@@ -17,7 +17,7 @@ const Footer = () => {
             <li>
               <Link
                 to={`/about`}
-                className="text-lg font-normal text-gray-800 transition-all duration-300 hover:text-indigo-600 focus-within:text-indigo-600 focus-within:outline-0"
+                className="text-lg font-normal text-gray-800 transition-all duration-300 hover:text-green-600 focus-within:text-green-600 focus-within:outline-0"
               >
                 About
               </Link>
@@ -25,7 +25,7 @@ const Footer = () => {
             <li>
               <Link
                 to={`/products`}
-                className="text-lg font-normal text-gray-800 transition-all duration-300 hover:text-indigo-600 focus-within:text-indigo-600 focus-within:outline-0"
+                className="text-lg font-normal text-gray-800 transition-all duration-300 hover:text-green-600 focus-within:text-green-600 focus-within:outline-0"
               >
                 Products
               </Link>
@@ -33,7 +33,7 @@ const Footer = () => {
             <li>
               <Link
                 to={`/ourjourney`}
-                className="text-lg font-normal text-gray-800 transition-all duration-300 hover:text-indigo-600 focus-within:text-indigo-600 focus-within:outline-0"
+                className="text-lg font-normal text-gray-800 transition-all duration-300 hover:text-green-600 focus-within:text-green-600 focus-within:outline-0"
               >
                 Our Journey
               </Link>
@@ -41,7 +41,7 @@ const Footer = () => {
             <li>
               <Link
                 to={`/blog`}
-                className="text-lg font-normal text-gray-800 transition-all duration-300 hover:text-indigo-600 focus-within:text-indigo-600 focus-within:outline-0"
+                className="text-lg font-normal text-gray-800 transition-all duration-300 hover:text-green-600 focus-within:text-green-600 focus-within:outline-0"
               >
                 Blogs
               </Link>
@@ -49,7 +49,7 @@ const Footer = () => {
             <li>
               <Link
                 to={`/contact`}
-                className="text-lg font-normal text-gray-800 transition-all duration-300 hover:text-indigo-600 focus-within:text-indigo-600 focus-within:outline-0"
+                className="text-lg font-normal text-gray-800 transition-all duration-300 hover:text-green-600 focus-within:text-green-600 focus-within:outline-0"
               >
                 Contact
               </Link>
@@ -61,7 +61,7 @@ const Footer = () => {
             <li>
               <Link
                 to={`/privacy-policy`}
-                className="text-sm font-normal text-gray-500 transition-all duration-300 hover:text-indigo-600 focus-within:text-indigo-600 focus-within:outline-0"
+                className="text-sm font-normal text-gray-500 transition-all duration-300 hover:text-green-600 focus-within:text-green-600 focus-within:outline-0"
               >
                 Privacy Policy
               </Link>
@@ -69,7 +69,7 @@ const Footer = () => {
             <li>
               <Link
                 to={`/return-policy`}
-                className="text-sm font-normal text-gray-500 transition-all duration-300 hover:text-indigo-600 focus-within:text-indigo-600 focus-within:outline-0"
+                className="text-sm font-normal text-gray-500 transition-all duration-300 hover:text-green-600 focus-within:text-green-600 focus-within:outline-0"
               >
                 Return Policy
               </Link>
@@ -78,7 +78,7 @@ const Footer = () => {
           <div className="flex items-center gap-4">
             <Link
               href="javascript:;"
-              className="border border-gray-300 p-2 rounded-full aspect-square text-gray-700 transition-all duration-500 hover:text-indigo-600 hover:border-indigo-600 focus-within:outline-0 focus-within:text-indigo-600 focus-within:border-indigo-600"
+              className="border border-white p-2 rounded-full aspect-square text-gray-700 transition-all duration-500 hover:text-green-600 hover:border-green-600 focus-within:outline-0 focus-within:text-green-600 focus-within:border-green-600"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ const Footer = () => {
             </Link>
             <Link
               href="javascript:;"
-              className="border border-gray-300 p-2 rounded-full aspect-square text-gray-700 transition-all duration-500 hover:text-indigo-600 hover:border-indigo-600 focus-within:outline-0 focus-within:text-indigo-600 focus-within:border-indigo-600"
+              className="border border-white p-2 rounded-full aspect-square text-gray-700 transition-all duration-500 hover:text-green-600 hover:border-green-600 focus-within:outline-0 focus-within:text-green-600 focus-within:border-green-600"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +112,7 @@ const Footer = () => {
             </Link>
             <Link
               href="javascript:;"
-              className="border border-gray-300 p-2 rounded-full aspect-square text-gray-700 transition-all duration-500 hover:text-indigo-600 hover:border-indigo-600 focus-within:outline-0 focus-within:text-indigo-600 focus-within:border-indigo-600"
+              className="border border-white p-2 rounded-full aspect-square text-gray-700 transition-all duration-500 hover:text-green-600 hover:border-green-600 focus-within:outline-0 focus-within:text-green-600 focus-within:border-green-600"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +129,7 @@ const Footer = () => {
             </Link>
             <Link
               href="javascript:;"
-              className="border border-gray-300 p-2 rounded-full aspect-square text-gray-700 transition-all duration-500 hover:text-indigo-600 hover:border-indigo-600 focus-within:outline-0 focus-within:text-indigo-600 focus-within:border-indigo-600"
+              className="border border-white p-2 rounded-full aspect-square text-gray-700 transition-all duration-500 hover:text-green-600 hover:border-green-600 focus-within:outline-0 focus-within:text-green-600 focus-within:border-green-600"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
