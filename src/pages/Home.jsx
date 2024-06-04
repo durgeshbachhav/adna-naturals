@@ -13,9 +13,9 @@ const Home = () => {
       {/* card start */}
       <section className="mt-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {/* <h2 className="font-manrope font-bold text-4xl text-black mb-8  text-center">
-            Product list
-          </h2> */}
+          <h2 className="font-manrope font-bold text-4xl text-black mb-8  text-center">
+            Our Products 
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {products.slice(0, 4).map((card, index) => (
               <Card key={index} card={card} />

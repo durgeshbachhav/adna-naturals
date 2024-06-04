@@ -161,17 +161,20 @@ const ProductInfo = () => {
               </div>
             </div>
           </div>
-          <div className="text-lg ">Description:</div>
-          <div> {description}</div>
-          <div className="text-lg ">About this Item: </div>
-          <div>{aboutThisItem}</div>
-          <ul className="list-disc ">
-            {benefits.map((benefit, index) => (
-              <li key={index} className="text-lg">
-                {benefit}
-              </li>
-            ))}
-          </ul>
+          <div className="p-4">
+            <div className="text-lg font-semibold mb-2">Description:</div>
+            <div className="mb-4 text-gray-700">{description}</div>
+            <div className="text-lg font-semibold mb-2">About this Item:</div>
+            <div className="mb-4 text-gray-700">{aboutThisItem}</div>
+            <ul className="list-disc list-inside pl-4">
+              {benefits.map((benefit, index) => (
+                <li key={index} className="text-lg text-gray-700 mb-1">
+                  {benefit}
+                </li>
+              ))}
+            </ul>
+          </div>
+
         </div>
       </div>
     </Layout>

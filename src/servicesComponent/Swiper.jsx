@@ -10,11 +10,11 @@ import asset9 from "../assets/asset9.jpeg";
 import asset10 from "../assets/asset10.jpeg";
 import asset11 from "../assets/asset11.jpeg";
 import asset12 from "../assets/asset12.gif";
-import product1 from './../assets/product1.jpg';
-import product2 from './../assets/product2.jpg';
-import product3 from './../assets/product3.jpg';
-import product4 from './../assets/product4.jpg';
-import product5 from './../assets/product5.jpg';
+import product1 from './../assets/swiperBanner/banner1.jpg';
+import product2 from './../assets/swiperBanner/banner2.jpg';
+import product3 from './../assets/swiperBanner/banner3.jpg';
+import product4 from './../assets/swiperBanner/banner4.jpg';
+import product5 from './../assets/swiperBanner/banner5.jpg';
 
 const SwiperComponent = () => {
   const [loading, setLoading] = useState(true);
@@ -51,15 +51,15 @@ const SwiperComponent = () => {
               slidesPerView={1}
               pagination={{ type: "fraction" }}
               loop={true}
-              navigation={true}
+              // navigation={true}
               modules={[Navigation]}
               className="mySwiper"
             >
               {swiperImagesforMobileScreen.map((image, index) => (
-                <SwiperSlide className="h-96" key={index}>
+                <SwiperSlide className="" key={index}>
                   <img
                     src={image}
-                    className="w-full h-full object-fill"
+                    className="w-full h-full "
                     alt={`Image ${index + 1}`}
                   />
                 </SwiperSlide>
